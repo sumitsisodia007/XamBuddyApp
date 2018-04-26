@@ -5,6 +5,6 @@
              x:Class="XamBuddyApp.MainPage">
 
     <StackLayout>
-        <Button Text="Tabbed Page" BackgroundColor="Azure" Clicked="Button_Clicked"/>
+        <Button Text="Tabbed Page" Style="{StaticResource buttonStyle}" Clicked="Button_Clicked"/>
     </StackLayout>
 </ContentPage>

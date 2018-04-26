@@ -17,7 +17,7 @@ namespace XamBuddyApp
             try
             {
                 InitializeComponent();
-                MainPage =new NavigationPage( new MainPage());
+                MainPage =new NavigationPage( new AddYouTube());
             }
             catch (Exception ex)
             {
