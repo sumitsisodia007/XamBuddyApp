@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamBuddyApp.ListViewAnim;
 using XamBuddyApp.TabViews;
+using XamBuddyApp.View;
 
 namespace XamBuddyApp
 {
@@ -40,6 +41,11 @@ namespace XamBuddyApp
         private void btnList4_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Page4());
+        }
+
+        private void btnListArt_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ArticleLiatPage());
         }
     }
 }

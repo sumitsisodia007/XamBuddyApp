@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamBuddyApp.View.ArticleLiatPage"
+             BackgroundColor="#384E70">
+    <ContentPage.Content>
+        <Grid Padding="10" RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!--<Label Text="I  HeadLine" Style="{StaticResource LblHeadLine}" />-->
+            <Label Grid.Row="0" Text="I Head" Style="{StaticResource LblHeadLine}"/>
+            <Frame CornerRadius="15" Grid.Row="1" Padding="7">
+            <Image Source="https://user-images.githubusercontent.com/30065887/39347531-e29da068-4a10-11e8-95f1-bc8694da6572.png"
+                   Aspect="AspectFit"/>
+            </Frame>
+            <Label Grid.Row="2" Text="I SubTitle" Style="{StaticResource LblBody1}" />
+
+            <Grid Grid.Row="3" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="I Body" Style="{StaticResource LblBody}" />
+                <Label Grid.Column="1" Text="I Body - 1" Style="{StaticResource LblBody1}" />
+                <Label Grid.Column="2" Text="I Caption" Style="{StaticResource LblCaption}" />
+                <Label Grid.Column="3" Text="I Caption" Style="{StaticResource LblCaption}" />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

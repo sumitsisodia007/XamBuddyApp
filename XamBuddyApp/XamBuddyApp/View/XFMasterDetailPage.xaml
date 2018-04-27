@@ -49,7 +49,7 @@
                                                WidthRequest="25"
                                                HeightRequest="25"
                                                VerticalOptions="Center" />
-                                        <Label Text="{Binding Title}" 
+                                        <Label Text="{Binding Title}" TextColor="Black"
                                                Style="{StaticResource LblBody1}"/>
                                     </StackLayout>
                                 </ViewCell>

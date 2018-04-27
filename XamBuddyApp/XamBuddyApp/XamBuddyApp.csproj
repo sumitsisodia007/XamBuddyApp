@@ -111,6 +111,9 @@
     <Compile Include="View\AddYouTube.xaml.cs">
       <DependentUpon>AddYouTube.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ArticleLiatPage.xaml.cs">
+      <DependentUpon>ArticleLiatPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\XFMasterDetailPage.xaml.cs">
       <DependentUpon>XFMasterDetailPage.xaml</DependentUpon>
     </Compile>
@@ -297,6 +300,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ListViewAnim\Page4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\ArticleLiatPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

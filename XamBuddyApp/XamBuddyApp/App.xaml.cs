@@ -23,8 +23,8 @@ namespace XamBuddyApp
                     ScreenHeight = 1000;
                 if (ScreenWidth == 0)
                     ScreenWidth = 600;
-                MainPage =new NavigationPage( new MainPage());
-                //MainPage = new XFMasterDetailPage();//new NavigationPage( new AddYouTube());
+               // MainPage =new NavigationPage( new MainPage());
+                MainPage = new XFMasterDetailPage();//new NavigationPage( new AddYouTube());
             }
             catch (Exception ex)
             {

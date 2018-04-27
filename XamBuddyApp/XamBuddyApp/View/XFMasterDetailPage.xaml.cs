@@ -20,6 +20,7 @@ namespace XamBuddyApp.View
 			InitializeComponent ();
             menuList = new List<MasterPageItem>();
             // Adding menu items to menuList and you can define title ,page and icon
+            menuList.Add(new MasterPageItem() { Title = "Home Page", Icon = "icon.png", TargetType = typeof(MainPage) });
             menuList.Add(new MasterPageItem() { Title = "Xamarin.Forms Custom Loader", Icon = "icon.png", TargetType = typeof(CustomLoaderTabPage) });
             menuList.Add(new MasterPageItem() { Title = "Xamarin.Forms Popup Page", Icon = "icon.png", TargetType = typeof(CustomPopupTabPage) });
             menuList.Add(new MasterPageItem() { Title = "Xamarin.Forms (Dynamic) MDP", Icon = "icon.png", TargetType = typeof(DynamicMDP) });
