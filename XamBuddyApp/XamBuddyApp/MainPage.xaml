@@ -7,7 +7,11 @@
 
     <StackLayout Padding="10" BackgroundColor="#384E70">
         <Button Text="Tabbed Page" Style="{StaticResource buttonStyle}" Clicked="Button_Clicked"/>
-
+        <Button x:Name="btnList1" Text="List Page1" Style="{StaticResource buttonStyle}" Clicked="btnList1_Clicked"/>
+        <Button x:Name="btnList2" Text="List Page2" Style="{StaticResource buttonStyle}" Clicked="btnList2_Clicked"/>
+        <Button x:Name="btnList3" Text="List Page3" Style="{StaticResource buttonStyle}" Clicked="btnList3_Clicked"/>
+        <Button x:Name="btnList4" Text="List Page4" Style="{StaticResource buttonStyle}" Clicked="btnList4_Clicked"/>
+        
         <Label Text="I have to test the text format and this is HeadLine" 
               Style="{StaticResource LblHeadLine}" />
         <Label Text="I have to test the text format and this is Title" 

@@ -12,12 +12,19 @@ namespace XamBuddyApp
 {
     public partial class App : Application
     {
+        public static int ScreenWidth;
+        public static int ScreenHeight;
         public App()
         {
             try
             {
                 InitializeComponent();
-                MainPage = new XFMasterDetailPage();//new NavigationPage( new AddYouTube());
+                if (ScreenHeight == 0)
+                    ScreenHeight = 1000;
+                if (ScreenWidth == 0)
+                    ScreenWidth = 600;
+                MainPage =new NavigationPage( new MainPage());
+                //MainPage = new XFMasterDetailPage();//new NavigationPage( new AddYouTube());
             }
             catch (Exception ex)
             {
