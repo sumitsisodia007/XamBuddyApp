@@ -41,11 +41,57 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\MasterPageItem.cs" />
     <Compile Include="Models\YouTubeDto.cs" />
     <Compile Include="Models\YouTubeItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TabViews\AnimationTabPage.xaml.cs">
       <DependentUpon>AnimationTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\AnimTriggerTabPage.xaml.cs">
+      <DependentUpon>AnimTriggerTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\CustomButtonTabPage.xaml.cs">
+      <DependentUpon>CustomButtonTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\CustomEntryTabPage.xaml.cs">
+      <DependentUpon>CustomEntryTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\CustomLabelTabPage.xaml.cs">
+      <DependentUpon>CustomLabelTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\CustomLoaderTabPage.xaml.cs">
+      <DependentUpon>CustomLoaderTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\CustomPopupTabPage.xaml.cs">
+      <DependentUpon>CustomPopupTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\CustomSliderTabPage.xaml.cs">
+      <DependentUpon>CustomSliderTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\CustomSwitchButtonTabPage.xaml.cs">
+      <DependentUpon>CustomSwitchButtonTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\DynamicMDP.xaml.cs">
+      <DependentUpon>DynamicMDP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\FABTabPage.xaml.cs">
+      <DependentUpon>FABTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\ImageEntryTabPage.xaml.cs">
+      <DependentUpon>ImageEntryTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\LottieAnimTabPage.xaml.cs">
+      <DependentUpon>LottieAnimTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\ReturnTypeTabPage.xaml.cs">
+      <DependentUpon>ReturnTypeTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\SliderLockTabPage.xaml.cs">
+      <DependentUpon>SliderLockTabPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabViews\UnderLineTabPage.xaml.cs">
+      <DependentUpon>UnderLineTabPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\YouTubeChannelPageModel.cs" />
     <Compile Include="View\AddYouTube.xaml.cs">
@@ -102,6 +148,96 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TabViews\AnimationTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\LottieAnimTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\FABTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\AnimTriggerTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\ImageEntryTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\UnderLineTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\CustomButtonTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\SliderLockTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\CustomSliderTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\CustomEntryTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\CustomLabelTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\CustomSwitchButtonTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\ReturnTypeTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\DynamicMDP.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\CustomPopupTabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabViews\CustomLoaderTabPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

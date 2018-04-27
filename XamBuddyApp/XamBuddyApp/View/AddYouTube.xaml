@@ -7,9 +7,9 @@
             Title="YT Page">
 
     <ContentPage.Content>
-        <StackLayout Spacing="5" Padding="5,0">
-            <vdo:MediaElement HorizontalOptions="Fill" BackgroundColor="Green" VerticalOptions="Center" HeightRequest="180" x:Name="Media" IsLooping="True"  AreTransportControlsEnabled="true" Source="http://video.ch9.ms/ch9/334f/891b78a5-642d-40b4-8d02-ff40ffdd334f/LoginToLinkedinUSingXamarinAuth_mid.mp4"/>
-            
+        <StackLayout Spacing="5" >
+            <vdo:MediaElement HorizontalOptions="Fill" BackgroundColor="Black" VerticalOptions="Center" HeightRequest="180" x:Name="Media" IsLooping="True"  AreTransportControlsEnabled="true" Source="http://video.ch9.ms/ch9/334f/891b78a5-642d-40b4-8d02-ff40ffdd334f/LoginToLinkedinUSingXamarinAuth_mid.mp4"/>
+            <StackLayout Padding="5">
             <ListView x:Name="YTList" ItemsSource="{Binding Items}" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -26,7 +26,8 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-            </ListView>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
