@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamBuddyApp.View.XFMasterDetailPage"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             >
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <forms:CachedImage Source="https://user-images.githubusercontent.com/30065887/39347531-e29da068-4a10-11e8-95f1-bc8694da6572.png"
+                           Aspect="AspectFill">
+                        <forms:CachedImage.Transformations>
+                            <transformations:BlurredTransformation  Radius="240" />
+                        </forms:CachedImage.Transformations>
+                    </forms:CachedImage>
+                    <!--<Image Source="https://user-images.githubusercontent.com/30065887/39347531-e29da068-4a10-11e8-95f1-bc8694da6572.png"
+                           Aspect="AspectFill" />-->
+                    <StackLayout Spacing="25" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <forms:CachedImage Source="icon.png" >
+                            <forms:CachedImage.Transformations>
+                                <transformations:RoundedTransformation Radius="240" />
+                            </forms:CachedImage.Transformations>
+                        </forms:CachedImage>
+                        <Label Text="Xam Buddy" 
+                               Style="{StaticResource LblHeadLine}" />
+                    </StackLayout>
+                </Grid>
+                <StackLayout Grid.Row="1" Spacing="5">
+                    <ListView x:Name="navigationDrawerList"
+                            RowHeight="60"
+                            SeparatorVisibility="None"
+                            BackgroundColor="#384E70"
+                            ItemSelected="OnMenuItemSelected">        
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <!-- Main design for our menu items -->
+                                    <StackLayout VerticalOptions="FillAndExpand"
+                                                 Orientation="Horizontal"
+                                                 Padding="20,10,0,10"
+                                                 Spacing="20">
+                                        <Image Source="{Binding Icon}"
+                                               WidthRequest="25"
+                                               HeightRequest="25"
+                                               VerticalOptions="Center" />
+                                        <Label Text="{Binding Title}" 
+                                               Style="{StaticResource LblBody1}"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    </MasterDetailPage>

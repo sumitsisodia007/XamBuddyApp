@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using FFImageLoading.Forms.Touch;
 
 namespace XamBuddyApp.iOS
 {
@@ -24,7 +25,7 @@ namespace XamBuddyApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            CachedImageRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }

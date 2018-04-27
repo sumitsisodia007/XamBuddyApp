@@ -2,9 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamBuddyApp"
-             x:Class="XamBuddyApp.MainPage">
+             x:Class="XamBuddyApp.MainPage"
+             BackgroundColor="#1D2E4B">
 
-    <StackLayout>
+    <StackLayout Padding="10" BackgroundColor="#384E70">
         <Button Text="Tabbed Page" Style="{StaticResource buttonStyle}" Clicked="Button_Clicked"/>
+
+        <Label Text="I have to test the text format and this is HeadLine" 
+              Style="{StaticResource LblHeadLine}" />
+        <Label Text="I have to test the text format and this is Title" 
+        Style="{StaticResource LblTitle}"/>
+        <Label Text="I have to test the text format and this is SubTitle" 
+               Style="{StaticResource LblSubHeading}" />
+        <Label Text="I have to test the text format and this is Body"
+               Style="{StaticResource LblBody}" />
+        <Label Text="I have to test the text format and this is Body - 1" 
+               Style="{StaticResource LblBody1}" />
+        <Label Text="I have to test the text format and this is Caption" 
+               Style="{StaticResource LblCaption}" />
+  
     </StackLayout>
 </ContentPage>
